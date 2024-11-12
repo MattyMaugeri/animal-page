@@ -1,15 +1,30 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #1F2937;
+    background-color: black;
     color: #E5E7EB;
-    font-size: 18px;
+    font-size: 18px;   
+    display: flex; 
+    flex-direction: column;
 }
 
 .body {
-    padding: 0 10em;
+    margin: 0 16em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    flex: 0 1 auto;
+}
+
+.all-content {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+}
+
+.centered-content {
+    margin: 0 10em;
 }
 
 /* Header Section */
@@ -18,11 +33,11 @@ body {
     display: flex;
     background-color: #1F2937;
     justify-content: space-between;
-    padding: 1em 0;
+    padding-top: 1em;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: #F9FAF8;
 }
@@ -37,7 +52,8 @@ ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    gap: 1em;
+    gap: 3em;
+    font-size: 14px;
 }
 
 
@@ -45,17 +61,22 @@ ul {
 
 .first-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 48px;
-    margin: 60px 0;
+    margin: 4em 0;
 }
 
 .left-side {
     display: flex;
     flex-direction: column;
-    flex: 0 1 400px;
+    flex: 0 1 450px; /* Need to fix squashing somewhere here and with picture*/
+    font-size: 14px;
+    color: rgb(172, 172, 172);
 }
 
-button {
+.first-signup,
+.last-signup {
     width: fit-content;
     padding: 4px 24px;
     background-color: #3882F6;
@@ -66,9 +87,10 @@ button {
 }
 
 .awesome {
-    font-size: 48px;
+    font-size: 34px;
     color: #F9FAF8;
     font-weight: 900;
+    padding-bottom: 0.5em;
 }
 
 .main-cat {
@@ -80,20 +102,20 @@ button {
 
 /* Second Section */
 
-.animal-header {
-    font-size: 36px;
-    color: #1F2937;
-    font-weight: 900;
-    margin-top: 40px;
-}
-
 .second-container {
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 -10em; /*Offset body margin*/
-    background-color: white;
     gap: 24px;
+    margin: 0 -10em; /*Offset margin for background?..*/
+    padding: 3em 0;
+}
+
+.animal-header {
+    font-size: 30px;
+    color: #1F2937;
+    font-weight: 900;
 }
 
 .content {
@@ -105,26 +127,34 @@ button {
     color: #1F2937;
     text-align: center;
     max-width: 150px;
+    font-size: 14px;
+    color: rgb(131, 131, 131);
 }
 
 img {
     border-radius: 8px;
-    border: solid #3882F6;
 }
 
 
 /* Third Section */
 
-.third-section {
+.third-container {
+    margin: 0 -10em; /*Offset margin for background?..*/
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0;
+}
+
+.third-content {
+    width: 700px;
     display: flex;
     flex-direction: column;
-    width: 650px;
-    margin: 90px 0;
 }
 
 .quote {
-    font-size: 36px;
-    font-weight: 100;
+    font-size: 28px;
     color: #1F2937;
 }
 
@@ -132,4 +162,49 @@ img {
     align-self: flex-end;
     font-weight: 900;
     color: #1F2937;
+    padding-right: 20px;
+}
+
+/*Fourth Section */
+
+.fourth-container {
+    margin: 0 -10em; /*Offset margin for background?..*/
+    background-color: white;
+    padding: 4em 0;
+}
+
+.sign-up-section {
+    display: flex;
+    margin: 0 15em;
+    background-color: #3882F6;
+    border-radius: 8px;
+    border-color: #3882F6;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.last-signup {
+    border-radius: 8px;
+    border-color: white;
+}
+
+.call-to-action {
+    font-weight: 600;
+}
+
+.sign-text {
+    font-size: 14px;
+}
+
+
+/*Footer Section*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    font-size: 14px;
+    color: rgb(172, 172, 172);
 }
