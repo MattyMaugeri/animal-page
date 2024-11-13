@@ -1,210 +1,205 @@
-body {
-    margin: 0;
-    padding: 0;
+html {
     background-color: black;
-    color: #E5E7EB;
-    font-size: 18px;   
-    display: flex; 
-    flex-direction: column;
 }
 
-.body {
-    margin: 0 16em;
+* {
+    padding: 0;
+    margin: 0;
+    color: #888888;
+}
+
+img {
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.main-cat {
+    height: 250px;
+    width: 450px;
+}
+
+body {
     background-color: white;
+}
+
+/* 1st Section */
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    padding-bottom: 2em;
+}
+
+.sec-1-container {
     display: flex;
     flex-direction: column;
-    background-color: #1F2937;
-    flex: 0 1 auto;
+    max-width: 1000px;
 }
 
-.all-content {
+nav {
     display: flex;
-    flex-direction: column;
-    flex: 0 1 auto;
-}
-
-.centered-content {
-    margin: 0 10em;
-}
-
-/* Header Section */
-
-.header {
-    display: flex;
-    background-color: #1F2937;
-    justify-content: space-between;
-    padding-top: 1em;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: 600;
-    color: #F9FAF8;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(172, 172, 172);
+    padding: 10px 0;
+    flex: 1 1 0; /* Stretches navbar */
 }
 
 ul {
     display: flex;
-    padding: 0;
-    margin: 0;
     list-style: none;
     gap: 3em;
-    font-size: 14px;
 }
 
+a {
+    text-decoration: none;
+}
 
-/* First Section */
+.logo {
+    margin-right: auto;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
 
-.first-container {
+.sec-1-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 48px;
-    margin: 4em 0;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 4em 0;
+}
+
+#awesome-title {
+    color: white;
+    font-size: 46px;
+}
+
+.right-side,
+.left-side {
+    flex: 1 1 0; /* Share and shrink available space equally */
 }
 
 .left-side {
     display: flex;
     flex-direction: column;
-    flex: 0 1 450px; /* Need to fix squashing somewhere here and with picture*/
-    font-size: 14px;
-    color: rgb(172, 172, 172);
+    color: rgb(185, 185, 185);
 }
 
-.first-signup,
-.last-signup {
+button {
     width: fit-content;
-    padding: 4px 24px;
+    padding: 0.4em 1.5em;
+    margin-top: 10px;
     background-color: #3882F6;
     color: white;
-    margin-top: 12px;
-    border-radius: 8px;
     border-color: #3882F6;
+    border-radius: 6px;
 }
 
-.awesome {
-    font-size: 34px;
-    color: #F9FAF8;
-    font-weight: 900;
-    padding-bottom: 0.5em;
-}
+/* 2nd Section */
 
-.main-cat {
-    width: 450px;
-    height: 250px;
-    border: none;
-}
-
-
-/* Second Section */
-
-.second-container {
-    background-color: white;
+.section-2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    margin: 0 -10em; /*Offset margin for background?..*/
-    padding: 3em 0;
 }
 
-.animal-header {
-    font-size: 30px;
-    color: #1F2937;
-    font-weight: 900;
-}
-
-.content {
+.sec-2-container {
     display: flex;
-    gap: 36px;
-}
-
-.pic-text {
-    color: #1F2937;
-    text-align: center;
-    max-width: 150px;
-    font-size: 14px;
-    color: rgb(131, 131, 131);
-}
-
-img {
-    border-radius: 8px;
-}
-
-
-/* Third Section */
-
-.third-container {
-    margin: 0 -10em; /*Offset margin for background?..*/
-    background-color: rgb(238, 238, 238);
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3em 0;
+    padding-top: 1em;
 }
 
-.third-content {
-    width: 700px;
+#sec-2-title {
+    font-size: 28px;
+    padding: 1.5em 0;
+    color: #1F2937;
+}
+
+.sec-2-content {
+    display: flex;
+    gap: 3em;
+    flex-wrap: wrap;
+    padding-bottom: 5.5em;
+}
+
+.pic {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.quote {
-    font-size: 28px;
-    color: #1F2937;
+.sec-2-text {
+    width: 150px;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+/* 3rd Section */
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding: 6em 0;
+}
+
+.sec-3-container {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
 }
 
 .author {
     align-self: flex-end;
-    font-weight: 900;
-    color: #1F2937;
-    padding-right: 20px;
+    font-weight: 800;
+    color: rgb(44, 44, 44);
 }
 
-/*Fourth Section */
-
-.fourth-container {
-    margin: 0 -10em; /*Offset margin for background?..*/
-    background-color: white;
-    padding: 4em 0;
+.quote {
+    font-size: 32px;
+    font-style: italic;
+    color: rgb(82, 82, 82);
 }
 
-.sign-up-section {
-    display: flex;
-    margin: 0 15em;
-    background-color: #3882F6;
-    border-radius: 8px;
-    border-color: #3882F6;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2em 0;
-}
+/* 4th Section */ 
 
-.last-signup {
-    border-radius: 8px;
-    border-color: white;
-}
-
-.call-to-action {
-    font-weight: 600;
-}
-
-.sign-text {
-    font-size: 14px;
-}
-
-
-/*Footer Section*/
-
-footer {
+.section-4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 6em 0;
+}
+
+.sec-4-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    border-radius: 8px;
+    width: 900px;
     padding: 2em 0;
+}
+
+.sec-4-header {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.sec-4-small {
     font-size: 14px;
-    color: rgb(172, 172, 172);
+    color: rgb(211, 211, 211);
+}
+
+#last-bnt {
+    border-color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #1F2937;
 }
